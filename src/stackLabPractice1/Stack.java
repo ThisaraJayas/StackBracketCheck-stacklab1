@@ -25,10 +25,9 @@ public class Stack {
         }
     }
     public char pop(){
-        if(!isEmpty()){
+       while(!isEmpty()){
             return stArray[top--];
-        }else {
-            return 'N';
         }
+       return 'N';
     }
 }
